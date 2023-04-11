@@ -6,8 +6,8 @@ from keras.models import load_model
 import json
 import boto3
 
-access_key = ''
-secret_key = ""
+access_key = st.secrets["access_key"]
+secret_key = st.secrets["secret_key"]
 
 st.title('test channel classificator')
 
