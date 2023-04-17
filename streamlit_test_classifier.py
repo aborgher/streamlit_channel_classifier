@@ -1,4 +1,3 @@
-# TODO: write a requirements file and test it into a completely fresh environment
 from sentence_transformers import SentenceTransformer
 import streamlit as st
 import tensorflow as tf
