@@ -51,6 +51,6 @@ with col1:
 
 with col2:
     if text_input:
-        st.write(f"Top {topk} channels with a score [range from 0 to 1]. The higher the score the more likelihood for the text to belong to that channel.")
+        st.write(f"Top {topk} channels with a score [range from 0 to 1]. The higher the score the higher the likelihood for the text to belong to that channel.")
         channel_proba = get_channel_preds(text_input, transformer, classifier, ix_ch)
         st.text("\n".join([f"{c}\t({p:.2})" for c, p in channel_proba[0: topk]]))
